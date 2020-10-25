@@ -11,7 +11,7 @@ Untuk test Sorting, code ada dalam file RFCI_1-Sorting.zip. Kemudian untuk test 
     o Resolve : Install dotenv dengan sintaks npm install dotenv
       
 3.	Setelah dotenv berhasil di install, terdapat error couldn’t find .env file. Hal ini mungkin terjadi karena file .env tidak ditemukan atau beberapa kemungkinan lain.
-    o Resolve : Comment code pada file codedebugging-master\src\config\index.js const envFound = dotenv.config(); if (envFound.error) {
+    o Resolve : Comment code pada file codedebugging-master\src\config\index.js yaitu const envFound = dotenv.config(); if (envFound.error) {
         throw new Error("⚠️  Couldn't find .env file  ⚠️"); } kemudian ganti menjadi try { const envFound = dotenv.config(); }catch(error){ console.log(error);}
   
 4.	Setelah itu terdapat error cannot find module ‘axios. Hal ini terjadi karena belum terdapat module axios yang terpasang.
